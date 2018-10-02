@@ -1,0 +1,99 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*    *valib kõik failid lehel
+     box-sizing: border-box;  arvestab margini ja paddingut*/
+
+
+/* muudab ära selle, et pilt automaatselt pärast viimast index.htmli sissekannet ei läheks */
+.clearfix:after {
+	content: "";  /*tühi sisu*/
+	display: table;
+	clear: both;
+}
+
+
+body {
+	 font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+	color:darkgreen;
+}
+
+h1 {
+	font-size:40px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size:25px;
+	margin-bottom: 10px;
+}
+
+.main-text {
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+#body-img {
+	height: 150px;
+	width:auto;
+	margin-bottom:20px;
+}
+
+.container {
+	width: 1140px;
+	/*	   top  right  bottom */
+	margin: 40px auto 0 auto;	
+}
+
+/*vähem koodi kordamiseks liidan nad ühe {} alla (dont repeat yourself vms)*/
+.blog-posts,
+.other-posts {
+	float:left;
+}
+
+
+/*võtame 70% ja 25% containeri laiusest*/
+.blog-posts {
+	width: 70%;
+	padding-right: 40px;
+	position: relative;  /*jätab kuupäeva blog posti borderi sisse mitte ei vii seda veebilehe paremasse nurka */
+}
+
+.other-posts {
+	width: 25%;
+}
+
+
+.posts-list li {
+    list-style: none; 
+    margin-top: 15px;
+}
+
+.author-box img {
+	border-radius: 50%;
+	height:100px;
+	width: auto;
+	float: left;
+}
+
+#author-name {
+	font-size: 22px;
+	margin-top: 30px;
+	margin-left: 10px;
+	float: left;
+}
+
+.author-box {
+	border-top: 1px solid green; 
+	padding-top: 20px;
+}
+
+.date {
+	position: absolute;
+	top: 10px;
+	right:40px;
+}
